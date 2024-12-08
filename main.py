@@ -6,7 +6,7 @@ import asyncio
 
 async def main():
     agent = Agent(
-        task="find all available primary school nearby kinrara mas apartment, and get their reviews with proos and cons and state if its private or public school, and also get their address and contact number, and price list. get at least 5 schools. if you detect any captcha on screen, pause for 10 seconds and try again.",
+        task="find all available primary school nearby puchong jaya, malaysia. get reviews with pros and cons and state if its private or public school, and also get the address and contact number, and price list. get at least 5 schools. if you detect any captcha on screen, pause for 10 seconds and try again. Do not visit any yelp links. If you detect facebook page that prompt login, just click on the x on the dialog to close the login dialog. When prompt for GPS location dialog, chooese precision location.",
         llm=ChatOpenAI(model="gpt-4o-mini"),
         browser=Browser(BrowserConfig(headless=False)),
     )
