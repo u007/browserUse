@@ -11,7 +11,7 @@ async def main():
     start_time = time.time()
     
     agent = Agent(
-        task=f"get me popular peditrician for tcm near bukit jalil, kuala lumpur. preferred from tungshin hospital. also list their reviews and if the doctor is able to speak in cantonese or english.",
+        task=f"get me popular pediatrician tcm near bukit jalil, kuala lumpur. preferred from tungshin hospital. also list their reviews and if the doctor is able to speak in cantonese or english.",
         llm=ChatOpenAI(model="gpt-4o-mini", api_key=os.getenv('OPENAI_API_KEY')),
         browser=Browser(BrowserConfig(headless=False)),
     )
